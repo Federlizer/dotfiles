@@ -25,14 +25,15 @@ call plug#begin(expand('~/.config/nvim/plugged'))
 "" linting
 Plug 'dense-analysis/ale'
 "" autocompletion
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc.nvim', {'branch': 'release', 'for': ['javascript', 'typescript']}
 
 "" javascript
 Plug 'pangloss/vim-javascript'
-"" jsx + tsx
 Plug 'maxmellon/vim-jsx-pretty'
-"" typescript
 Plug 'HerringtonDarkholme/yats.vim'
+
+"" golang
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries', 'for': 'go' }
 
 "" utils
 Plug 'vim-airline/vim-airline'
@@ -55,7 +56,7 @@ let g:gruvbox_underline = 1
 let g:gruvbox_undercurl = 1
 let g:gruvbox_termcolors = 256
 let g:gruvbox_contrast_dark = 'medium'
-let g:gruvbox_contrast_light = 'medium'
+let g:gruvbox_contrast_light = 'hard'
 let g:gruvbox_italicize_comments = 1
 let g:gruvbox_italicize_strings = 1
 
@@ -114,6 +115,9 @@ filetype plugin indent on
 syntax on
 set background=dark
 silent! colorscheme gruvbox
+
+"" help find stuff
+set path+=**
 
 "" encoding
 set encoding=utf-8
