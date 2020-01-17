@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 cp ./init.vim ~/.config/nvim/init.vim
 cp ./kitty.conf ~/.config/kitty/kitty.conf
