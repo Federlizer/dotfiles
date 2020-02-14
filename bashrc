@@ -18,3 +18,12 @@ LIGHT_CYAN="\e[96m"
 WHITE="\e[97m"
 
 PS1="$GREEN\w$WHITE\$$RESET "
+
+# setup ls
+if [ -x /usr/bin/dircolors ]; then
+  eval "$(dircolors -b)"
+
+fi
+
+alias ls='ls --color=auto'
+alias la='ls -la'
