@@ -1,3 +1,8 @@
+GIT_COMPLETIONS=/usr/share/bash-completion/completions/git
+
+### IMPORTS ###
+[ -e $GIT_COMPLETIONS ] && source $GIT_COMPLETIONS || echo "git completion not found"
+
 ### COLORS ###
 # Important note here:
 # wrapping all colors (or any other variable that is supposed to have 0 length on the PS1)
