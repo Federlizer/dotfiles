@@ -25,7 +25,7 @@ call plug#begin(expand('~/.config/nvim/plugged'))
 "" linting
 Plug 'dense-analysis/ale'
 "" autocompletion
-Plug 'neoclide/coc.nvim', {'branch': 'release', 'for': ['javascript', 'typescript', 'typescriptreact']}
+Plug 'neoclide/coc.nvim', {'branch': 'release', 'for': ['javascript', 'typescript', 'typescriptreact', 'python']}
 
 "" javascript
 Plug 'pangloss/vim-javascript'
