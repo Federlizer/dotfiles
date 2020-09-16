@@ -45,4 +45,4 @@ HISTCONTROL=ignoreboth:erasedups
 # NOTE: this won't trigger an infinite loop
 # (one that opens a tmux inside a tmux, since tmux reads .bashrc)
 # as long as tmux has the $TMUX lock.
-[ -x /usr/bin/tmux ] && [ $TERM = 'xterm-kitty' ] && tmux && exit
+#[ -x /usr/bin/tmux ] && [ $TERM = 'xterm-kitty' ] && tmux && exit
