@@ -46,3 +46,8 @@ HISTCONTROL=ignoreboth:erasedups
 # (one that opens a tmux inside a tmux, since tmux reads .bashrc)
 # as long as tmux has the $TMUX lock.
 #[ -x /usr/bin/tmux ] && [ $TERM = 'xterm-kitty' ] && tmux && exit
+
+### Some functions
+cl() {
+  cd "$1" && ls
+}
